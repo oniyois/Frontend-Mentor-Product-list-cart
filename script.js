@@ -177,7 +177,7 @@ function loadData() {
       }
 
       //declaring my function and storing its return in this variable
-      const addingToThisCart = await storeDataInLocalStorage();
+      const addingToThisCart = storeDataInLocalStorage();
 
       //making sure the code does not proceed if the return from the above function is false
       if (addingToThisCart.type === false) {
